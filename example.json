@@ -1,0 +1,39 @@
+[
+  {
+    "path": "images/halfauto.webp",
+    "price": "",
+    "category": "Напівавтомат",
+    "newproduct": true,
+    "popularproduct": false,
+    "availability": false,
+    "description": "Пральна машина напівавтомат Supretto 5638-0001"
+  },
+  {
+    "path": "images/washdryer.webp",
+    "price": "35 999 грн",
+    "newprice": "26 299 грн",
+    "category": "Прально-сушильні",
+    "newproduct": false,
+    "popularproduct": false,
+    "availability": true,
+    "description": "Пральна машина із сушаркою ELECTROLUX EW7WO447WU"
+  },
+  {
+    "path": "images/withbag.webp",
+    "price": "20 390 грн",
+    "category": "З баком",
+    "newproduct": false,
+    "popularproduct": true,
+    "availability": true,
+    "productname": "Пральна машина Gorenje WP 702/R+бак"
+  },
+  {
+    "path": "images/frontdonload.webp",
+    "price": "14 499 грн",
+    "category": "З Фронтальним завантаженням",
+    "newproduct": false,
+    "popularproduct": true,
+    "availability": true,
+    "description": "Пральна машина вузька SAMSUNG WW60A3100BE/UA"
+  }
+]
