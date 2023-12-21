@@ -1,0 +1,347 @@
+@font-face {
+    font-family: 'Integral CF';
+    src: url('../fonts/IntegralCF-Bold.otf');
+}
+@font-face {
+    font-family: 'Satoshi Black';
+    src: url('../fonts/Satoshi-Black.otf');
+}
+@font-face {
+    font-family: 'Satoshi';
+    src: url('../fonts/Satoshi-Light.ttf');
+}
+
+*{
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	box-sizing: border-box;
+}
+.small-line{
+    height: 34px;
+    background: black;
+    color: white;
+    text-align: center;
+    font-size: 12px;
+    font-family: 'Satoshi Black';
+    line-height: 38px;
+}
+.content-wrap{
+    max-width: 1248px;
+    margin: 0 auto;
+    padding: 0 10px;
+}
+.logo{
+    color: black;
+    font-size: 25.2px;
+    font-weight: 700;
+    font-family: 'Integral CF';
+    line-height: normal;
+}
+.header-menu{
+    display: flex;
+    justify-content: space-between;
+    height: 60px;
+    align-items: center;
+}
+
+.menu-list{
+    width: 100px;
+    padding: 20px;
+    list-style: none;
+    color: #000;
+    font-family: 'Satoshi Black';
+    background: #fff;
+    position: absolute;
+    left: 0;
+    top: 20px;
+}
+.main-menu i {
+    cursor: pointer;
+    margin-right: 10px;
+}
+.main-menu_1 i {
+    cursor: pointer;
+}
+
+.main-menu, .main-menu_1{
+    position: relative;
+    top: 3px;
+}
+.main-menu_1{
+    display: inline-flex;
+    align-items: flex-start;
+    gap: 12px;
+/*  padding: 0 20px;*/
+}
+.menu-functions {
+    width: 100px;
+    padding: 20px;
+    list-style: none;
+    color: #000;
+    font-family: 'Satoshi Black';
+    background: #fff;
+    position: absolute;
+    right: 0;
+    top: 20px;
+}
+.search .fa-solid.fa-magnifying-glass {
+    display: none;
+}
+.hide{
+    display: none !important;
+}
+.search-wrap{
+    display: none;
+}
+.line{
+    width: 96%;
+    height: 1px;
+    margin: 0px 8px auto;
+    margin-bottom: 16px;
+    background: rgba(0, 0, 0, 0.1);
+}
+li{
+    font-family: 'Satoshi';
+    font-size: 14px;
+    color: rgba(0, 0, 0, 0.6);
+    margin-bottom: 6px;
+}
+ul{
+    list-style-type: none;
+}
+.line{
+    width: 96%;
+    height: 1px;
+    margin: 0px 8px auto;
+    background: rgba(0, 0, 0, 0.1);
+}
+.content-wrap{
+    max-width: 1248px;
+    margin: 0 auto;
+    padding: 0px 10px 1px 10px;
+}
+.free_spase{
+    height: 19px;
+}
+.header{
+    background: rgba(0, 0, 0, 0.2);
+}
+.filters{
+    width: 390px;
+    height: 1066px;    
+    flex-shrink: 0;
+    border-radius: 20px 20px 0px 0px;
+    background: #FFF;
+    padding: 0px 0px 25px 0px;
+}
+.filters_open, .price_open{
+    display: flex;
+    width: 353px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 18px 20px 19px;
+}
+.filters_open_title{
+    color: black;
+    font-family: 'Satoshi Black';
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+.close_icon{
+    width: 14px;
+    height: 14px;
+}
+.fa-solid.fa-xmark{
+    font-size: 20px;
+    flex-shrink: 0;
+    color: rgba(0, 0, 0, 0.4);
+}
+.type_clothing{
+    padding: 24px 18px 24px 19px;
+    display: flex;
+    width: 353px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+}
+.type{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-self: stretch;
+}
+.type_text{
+    color: rgba(0, 0, 0, 0.60);
+    leading-trim: both;
+    text-edge: cap;
+    font-family: 'Satoshi';
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+.fa-solid.fa-chevron-right{
+    color: rgba(0, 0, 0, 0.60);
+}
+.price, .size{
+    padding: 0px 0px 20px 0px;
+}
+.open_icon{
+    color: black;
+}
+.base_line{
+    display: flex;
+    height: 6px;
+    flex-shrink: 0;
+    border-radius: 20px;
+    background: #F0F0F0;
+    padding: 0px 22px 0px 32px;
+}
+.point{
+    width: 20px;
+    height: 20px;
+    flex-shrink: 0;
+    background: black;
+    border-radius: 62px;
+    margin: -5px;
+}
+.black_line{
+    width: 263px;
+    height: 6px;
+    flex-shrink: 0;
+    border-radius: 20px;
+    background: #000;
+}
+.indexes{
+    display: flex;
+    gap: 239px;
+    padding: 12px 4px 0px 32px;
+}
+.index{
+    color: #000;
+    font-family: 'Satoshi';
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+.colors{
+    margin: 0px 0px 4px 0px;
+}
+.circles, .sizes{
+    padding: 0px 0px 0px 18px;
+}
+.circles1{
+    display: flex;
+    gap: 12px;
+    margin-bottom: 16px;
+}
+.circle{
+    width: 39px;
+    height: 39px;
+    border-radius: 50px;
+}
+.circle1{
+    background: #32CD32;
+    border: 2px solid #008000;
+}
+.circle2{
+    background: #F50606;
+    border: 1px solid #8B0000;
+}
+.circle3{
+    background: #F5DD06;
+    border: 1px solid #B8860B;
+}
+.circle4{
+    background: #F57906;
+    border: 1px solid #FF8C00;
+}
+.circle5{
+    background: #06CAF5;
+    border: 1px solid #4682B4;
+}
+.circle6{
+    background: #063AF5;
+    border: 2px solid #00008B;
+    text-align: center;
+    padding: 11px 2px 11px 2px;
+}
+.circle7{
+    background: #7D06F5;
+    border: 1px solid #9400D3;
+}
+.circle8{
+    background: #F506A4;
+    border: 1px solid #C71585;
+}
+.circle9{
+    background: #FFF;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+}
+.circle10{
+    background: #000;
+    border: 1px solid #000;
+}
+.fa-solid.fa-check{
+    color: #ffffff;
+}
+.ellipses{
+    display: flex;
+    gap: 8px;
+    height: 39px;
+    margin: 0px 0px 8px 0px;
+}
+.circle_small, .circle_medium, .circle_large, .circle_x-large{
+    display: flex;
+    height: 39px;
+    background: #F0F0F0;
+    border: 1px solid rgba(0, 0, 0, 0.10);
+    border-radius: 62px;
+    color: rgba(0, 0, 0, 0.60);
+    font-family: 'Satoshi';
+    font-size: 12px;
+    font-weight: 600;
+    text-align: center;
+    line-height: 52px;
+    margin-bottom: 50px;
+    padding: 10px 20px;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    cursor: pointer;
+}
+button:hover {
+    background: black;
+    color: rgba(255, 255, 255, 1);
+}
+.circle_add{
+    width: 353px;
+    height: 48px;
+    background: black;
+    color: #FFF;
+    display: flex;
+    border: 1px solid rgba(0, 0, 0, 0.10);
+    border-radius: 25px;
+    font-family: 'Satoshi';
+    font-size: 14px;
+    font-weight: 400;
+    text-align: center;
+    line-height: 52px;
+    margin-bottom: 60px;
+    padding: 16px 54px;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+}
+.circle_add:hover {
+    background: #F0F0F0;
+    color: black;
+}
+a{
+    text-decoration: none;
+}
