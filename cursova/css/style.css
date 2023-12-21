@@ -13,7 +13,6 @@
 	outline: 0;
 	box-sizing: border-box;
 }
-
 .smal-line{
     height: 34px;
     background: black;
@@ -42,7 +41,6 @@
 	height: 60px;
 	align-items: center;
 }
-
 .menu-list{
 	width: 100px;
 	padding: 20px;
@@ -66,7 +64,6 @@
 .main-menu_1 i {
 	cursor: pointer;
 }
-
 .main-menu, .main-menu_1{
 	position: relative;
 	top: 3px;
@@ -75,7 +72,6 @@
 	display: inline-flex;
 	align-items: flex-start;
 	gap: 12px;
-/*	padding: 0 20px;*/
 }
 .jumbotron{
 	height: 448px;
@@ -149,7 +145,6 @@ h1{
 .achievement_2{
     width: 278px;
     height: 52px;
-/*    display: flex;*/
     background: transparent;
     color: #000;
     text-align: center;
@@ -219,9 +214,9 @@ h1{
 	flex-shrink: 0;
 	margin-top: 18px;
 	margin-right: 5px;
-	height: auto; /* Змініть висоту за потребою */
+	height: auto;
 	background: no-repeat center center;
-	background-size: contain; /* Замість cover для SVG-зображень */
+	background-size: contain;
 }
 .versace {
 	width: 116.736px;
@@ -235,12 +230,10 @@ h1{
   	width: 109.387px;
   	height: 25.243px;
 }
-
 .prada {
 	width: 127px;
   	height: 21px;
 }
-
 .calvin-klein {
  	width: 134.845px;
 	height: 21.746px;
@@ -265,9 +258,7 @@ h1{
 	height: 100%;
 }
 .new-arrivals_title{
-    /*width: 403px;
-    height: 58px;
-*/  color: #000;
+	color: #000;
     font-family: 'Integral CF';
     font-size: 32px;
     text-align: center;
@@ -278,7 +269,6 @@ h1{
 	display: flex;
     justify-content: space-between;
 }
-
 .t-shirt_img, .jeans_img {
   display: flex;
   border-radius: 13px;
@@ -291,8 +281,6 @@ h1{
 .jeans_img{
     width: 198px;
     height: 200px;
-/*	background-repeat: no-repeat;*/
-/*    background-image: url(../images/jeans1.png);*/
 }
 .shirt_img, .orange_tshirt_img{
 	width: 198px;
@@ -311,9 +299,6 @@ h1{
     line-height: normal;
     white-space: nowrap;
 }
-/*.text1{
-	display: none;
-}*/
 .new-arrivals_evaluation{
     display: flex;
     justify-content: space-between;
@@ -345,9 +330,6 @@ h1{
     font-weight: 400;
     line-height: normal;
 }
-/*.rating-shirt, .rating-shirt_1, .rating-orange_t-shirt, .rating-orange_t-shirt_1{
-	display: none;
-}*/
 .prices{
     display: flex;
     color: #000;
@@ -356,14 +338,10 @@ h1{
     font-weight: 700;
     line-height: normal;
     column-gap: 10px;
-/*    padding: 5px 5px 24px 13px;*/
 }
 .price-jeans{
     display: flex;
 }
-./*price-shirt, .price-orange_tshirt{
-	display: none;
-}*/
 .ellipse_2{
     display: flex;
     width: 42px;
@@ -403,10 +381,7 @@ h1{
 }
 .striped-shirt_img, .graphic-tshirt_img {
   display: inline-block;
-  /*width: 295px;
-  height: 298px;*/
   border-radius: 13px;
-/*  background: no-repeat center center;*/
   background-size: cover; /* Адаптивне зміщення зображення */
 }
 .shorts_img, .skinny-jeans_img{
@@ -416,18 +391,11 @@ h1{
 .striped-shirt_img{
 	width: 198px;
     height: 200px;
-/*    background-repeat: no-repeat;
-	background-image: url(../images/stripedshirt.png);*/
 }
 .graphic-tshirt_img{
     width: 198px;
     height: 200px;
-/*    background-repeat: no-repeat;
-	background-image: url(../images/graphictshirt.png);*/
 }
-/*.shorts_text, .skinny-jeans_text{
-	display: none;
-}*/
 .top-selling_text{
 	display: flex;
 	justify-content: space-around;
@@ -448,9 +416,6 @@ h1{
 .price-striped-shirt{
     display: flex;
 }
-/*.price-shorts, .price-skinny-jeans{
-	display: none;
-}*/
 .ellipse_5{
     width: 42px;
     height: 20px;
@@ -464,7 +429,6 @@ h1{
     text-align: center;
     background: rgba(255, 51, 51, 0.1);
 }
-
 .style{
 	width: 99%;
 	padding: 0px 0px 0px 24px;
@@ -474,7 +438,7 @@ h1{
 	margin-bottom: 50px;
 }
 .name-style{
-    width: 246px; /*забрати буде посередині*/
+    width: 246px;
     color: #000;
     text-align: center;
     font-family: 'Integral CF';
@@ -500,7 +464,6 @@ h1{
 	background-repeat: no-repeat;
     border-radius: 20px;
     margin-bottom: 20px;
-/*    background-image: url(../images/casual1.png);*/
 }
 .image-formal{
     width: 93%;
@@ -508,9 +471,6 @@ h1{
     border-radius: 20px;
     background-repeat: no-repeat;
     margin-bottom: 20px;
-/*    background-image: url(../images/formal1.png);*/
-/*    margin-top: 190px;
-    margin-left: 15px;*/
 }
 .image-party{
 	width: 93%;
@@ -518,7 +478,6 @@ h1{
     border-radius: 20px;
     background-repeat: no-repeat;
     margin-bottom: 20px;
-/*    background-image: url(../images/party1.png);*/
 }
 .image-gym-block{
 	width: 93%;
@@ -538,7 +497,6 @@ h1{
     background: #FFF;
     background-repeat: no-repeat;
     margin-bottom: 20px;
-/*    background-image: url(../images/gym1.png);*/
 }
 .title-reviews{
     width: 286px;
@@ -574,7 +532,6 @@ h1{
     line-height: 22px;
     margin-top: 155px;
     margin-bottom: 49px;
-/*    justify-content: space-around;*/
 }
 .rating-shop{
     width: 93px;
@@ -805,9 +762,6 @@ h1{
     right: 0;
     top: 20px;
 }
-/*.rating-skinny-jeans, .rating-shorts_1, .rating-skinny-jeans_1 {
-    display: none;
-}*/
 .rating-graphic-tshirt{
     width: 74px;
     height: 18px;
@@ -845,13 +799,6 @@ h1{
 a{
 	text-decoration: none;
 }
-
-
-
-
-
-
-
 
 /*Global classes*/
 .fz-main{
@@ -909,7 +856,6 @@ a{
 		margin: 20px auto;
 	}
 }
-
 @media (min-width: 485px) and (max-width: 598px) {
 	.star_1 {
 		left: 80%;
@@ -934,13 +880,11 @@ a{
 	    right: 10%;
 	}
 }
-
 @media (min-width: 725px){
 	.arrow{
 	    right: 1%;
 	}
 }
-
 @media (min-width: 362px) and (max-width: 599px){
 	.name-style{
 	    margin: 6px 26px auto;
@@ -949,7 +893,6 @@ a{
 		margin-top: 32px;
 	}
 }
-
 @media (min-width: 320px) and (max-width: 394px) {
 	.star_1 {
 		left: 20%;
@@ -973,7 +916,6 @@ a{
 		width: 288px;
 	}
 }
-
 @media (min-width: 599px){
 	.star_1{
 		display: flex;
@@ -1372,12 +1314,6 @@ a{
 	    font-size: 35px;
 	}
 }
-/*@media (min-width: 600px) and (max-width: 618) {
-	.field{
-		margin-left: -45px;
-	}
-}
-*/
 @media (min-width: 680px) {
 	.search .fa-solid.fa-magnifying-glass {
 		display: block;
@@ -1426,10 +1362,8 @@ a{
 		top: -9px;
 		left: -100px;
 		display: flex;
-/*		justify-content: flex-end;*/
 	}
 	.menu-list li{
-/*		margin-right: 30px;*/
 		font-size: 16px;
 		white-space: nowrap;
 	}
@@ -1550,7 +1484,6 @@ a{
 		width: 150px;
 	}
 }
-
 @media (min-width: 771px){
 	.brands{
 		height: 122px;
@@ -1665,26 +1598,6 @@ a{
 		background-image: url(../images/Vector1.svg);
 	}
 }
-
-/*@media (min-width: 1000px){
-	.star_1{
-		width: 104px;
-		height: 104px;
-		position: relative;
-	    bottom: 127%;
-    	left: 78%;
-		background-image: url(../images/Vector.svg);
-	}
-	.star_2{
-		width: 56px;
-		height: 56px;
-		position: absolute;
-	   	top: 26%;
-    	right: 23%;
-		background-image: url(../images/Vector1.svg);
-	}
-}*/
-
 @media (min-width: 1025px){
 	.star_1{
 		width: 104px;
@@ -1719,11 +1632,6 @@ a{
     color: rgba(0, 0, 0, 0.4);
     margin-left: 10px;
 }
-
-/*.search .fa-solid.fa-magnifying-glass {
-	display: none;
-}
-*/
 
 .hide{
 	display: none !important;

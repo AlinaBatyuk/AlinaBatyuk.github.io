@@ -20,17 +20,6 @@ menuItem.addEventListener('click', ()=> {
 	basketFunctions.classList.toggle('hide')
 })
 
-const typeOpen = document.getElementById('typeOpen')
-const typeClose = document.getElementById('typeClose')
-const typeMenu = document.getElementById('typeMenu')
-const menuType = document.getElementById('menuType')
-
-menuIcons.addEventListener('click', ()=> {
-    typeOpen.classList.toggle('hide')
-    typeClose.classList.toggle('hide')
-    typeMenu.classList.toggle('hide')
-})
-
 var swiper = new Swiper(".mySwiper", {
       slidesPerView: 3,
       spaceBetween: 30,
