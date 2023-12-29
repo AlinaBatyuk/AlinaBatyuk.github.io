@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Галерея Кішки</title>
+    <style>
+        body {
+            font-size: 20px;
+            line-height: 28px;
+        }
+        section {
+            display: flex;
+            max-width: 600px;
+            margin: 20px auto;
+            align-items: center;
+        }
+
+        #backButton, #nextButton {
+            flex-basis: 80px;
+            cursor: pointer;
+        }
+
+        .content {
+            width: 100%;
+            text-align: center;
+        }
+        img{
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <div id="backButton">Назад</div>
+        <div class="content">
+            <div class="photos-number">
+                Фотографія <span id="currentPhotoNumber"></span> з <span id="allPhotoNumber"></span>
+            </div>
+            <div class="image">
+                <img src="" alt="Фото" id="image">
+            </div>
+            <div class="photo-data">
+                <div id="title" style="font-weight: bold;"></div>
+                <div id="description"></div>
+            </div>
+        </div>
+        <div id="nextButton">Вперед</div>
+    </section>
+    <script>
+        var imagesArray = [ {path: 'images/cat1.jpg',
+                title : 'Сіра гламурна киця',
+                description : 'Британська короткошерста',
+                },
+            {   path: 'images/cat2.jpg',
+                title : 'Голубоока киця',
+                description : 'Сіамська порода'
+                },
+            {   path: 'images/cat3.jpg',
+                title : 'Леопардова киця',
+                description : 'Бенгальська кішка'
+                }
+        ]
+
+        
+        function setData() {
+            document.getElementById('image').setAttribute('src', imagesArray[currentIndex].path)
+            document.getElementById('title').innerHTML = imagesArray[currentIndex].title
+            document.getElementById('description').innerHTML = imagesArray[currentIndex].description
+
+            document.getElementById('currentPhotoNumber').innerHTML = currentIndex + 1
+            document.getElementById('allPhotoNumber').innerHTML = imagesArray.length
+        
+            if(currentIndex === 0) {
+                document.getElementById('backButton').innerHTML = ""
+            } else {
+                document.getElementById('backButton').innerHTML = "Назад"
+            }
+
+            if(currentIndex === imagesArray.length - 1) {
+                document.getElementById('nextButton').innerHTML = ""
+            } else {
+                document.getElementById('nextButton').innerHTML = "Вперед"
+            }
+        }
+       
+        var currentIndex = 0;
+        setData(currentIndex)
+
+        document.getElementById('backButton').addEventListener('click', () => {
+                currentIndex--;
+                setData()
+        })
+        document.getElementById('nextButton').addEventListener('click', () => {
+                currentIndex++;
+                setData()
+        })
+    </script>
+</body>
+</html>
