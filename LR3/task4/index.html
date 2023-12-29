@@ -3,93 +3,95 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Батюк Аліна ПІ 20-02</title>
+    <title>Галерея Кішки</title>
     <style>
-        .pixel {
-            display: block;
-            float: left;
-            width: 10px;
-            height: 10px;
-            background-color: red;
-            margin: 0px;
+        body {
+            font-size: 20px;
+            line-height: 28px;
         }
-        #captchaContainer {
+        section {
             display: flex;
-            gap: 12px;
-            margin: 10px 0;
+            max-width: 600px;
+            margin: 20px auto;
+            align-items: center;
         }
-        #captchaContainer div {
-            width: 30px;
+
+        #backButton, #nextButton {
+            flex-basis: 80px;
+            cursor: pointer;
+        }
+
+        .content {
+            width: 100%;
+            text-align: center;
         }
     </style>
 </head>
 <body>
-    <div id="captchaContainer"></div>
-    <input type="text" id="userInput">
-    <button onclick="checkCaptcha()">перевірити</button>
-    <p id="result"></p>
-
+    <section>
+        <div id="backButton">Назад</div>
+        <div class="content">
+            <div class="photos-number">
+                Фотографія <span id="currentPhotoNumber"></span> з <span id="allPhotoNumber"></span>
+            </div>
+            <div class="image">
+                <img src="" alt="Фото" id="image">
+            </div>
+            <div class="photo-data">
+                <div id="title" style="font-weight: bold;"></div>
+                <div id="description"></div>
+            </div>
+        </div>
+        <div id="nextButton">Вперед</div>
+    </section>
     <script>
-        const digitToPixels = {
-            '0': ['111', '101', '101', '101', '111'],
-            '1': ['010', '010', '010', '010', '010'],
-            '2': ['111', '001', '111', '100', '111'],
-            '3': ['111', '001', '110', '001', '111'],
-            '4': ['101', '101', '111', '001', '001'],
-            '5': ['111', '100', '111', '001', '111'],
-            '6': ['111', '100', '111', '101', '111'],
-            '7': ['111', '001', '010', '010', '010'],
-            '8': ['111', '101', '111', '101', '111'],
-            '9': ['111', '101', '111', '001', '111']
-        };
-
-        let generatedNumber;
-
-        function initCaptcha(digits) {
-            generatedNumber = generateRandomNumber(digits);
-            displayCaptcha(generatedNumber);
-        }
-
-        function generateRandomNumber(digits) {
-            let min = Math.pow(10, digits - 1);
-            let max = Math.pow(10, digits) - 1;
-            return Math.floor(Math.random() * (max - min + 1) + min);
-        }
-
-        function displayCaptcha(number) {
-            const container = document.getElementById('captchaContainer');
-            container.innerHTML = '';
-
-            const numberString = String(number);
-
-            for (let char of numberString) {
-                if (digitToPixels[char]) {
-                    const div = document.createElement('div')
-                    container.appendChild(div)
-                    for (let row of digitToPixels[char]) {
-                        for (let pixel of row) {
-                            const span = document.createElement('span');
-                            span.className = 'pixel';
-                            span.style.opacity = pixel === '1' ? 1 : 0;
-                            div.appendChild(span);
-                        }
-                    }
+        var imagesArray = [ {path: 'images/cat1.jpg',
+                title : 'Сіра гламурна киця',
+                description : 'Британська короткошерста',
+                },
+            {   path: 'images/cat2.jpg',
+                title : 'Голубоока киця',
+                description : 'Сіамська порода'
+                },
+            {   path: 'images/cat3.jpg',
+                title : 'Леопардова киця',
+                description : 'Бенгальська кішка'
                 }
-            }
-        }
+        ]
 
+        
+        function setData() {
+            document.getElementById('image').setAttribute('src', imagesArray[currentIndex].path)
+            document.getElementById('title').innerHTML = imagesArray[currentIndex].title
+            document.getElementById('description').innerHTML = imagesArray[currentIndex].description
 
-        function checkCaptcha() {
-            const userInput = document.getElementById('userInput').value;
-
-            if (parseInt(userInput, 10) === generatedNumber) {
-                document.getElementById('result').textContent = 'Правильно!';
+            document.getElementById('currentPhotoNumber').innerHTML = currentIndex + 1
+            document.getElementById('allPhotoNumber').innerHTML = imagesArray.length
+        
+            if(currentIndex === 0) {
+                document.getElementById('backButton').innerHTML = ""
             } else {
-                document.getElementById('result').textContent = 'Помилка';
+                document.getElementById('backButton').innerHTML = "Назад"
+            }
+
+            if(currentIndex === imagesArray.length - 1) {
+                document.getElementById('nextButton').innerHTML = ""
+            } else {
+                document.getElementById('nextButton').innerHTML = "Вперед"
             }
         }
+       
+        var currentIndex = 0;
+        setData(currentIndex)
 
-        initCaptcha(2); 
+        document.getElementById('backButton').addEventListener('click', () => {
+                currentIndex--;
+                setData()
+        })
+        document.getElementById('nextButton').addEventListener('click', () => {
+                currentIndex++;
+                setData()
+        })
     </script>
 </body>
 </html>
