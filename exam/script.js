@@ -1,5 +1,6 @@
 
 const fahrenheitInput = document.getElementById('fahrenheitInput');
+validateNumber()
 
         function validateNumber() {
             const inputElement = document.getElementById('fahrenheitInput');
@@ -12,4 +13,4 @@ const fahrenheitInput = document.getElementById('fahrenheitInput');
                     inputElement.classList.remove('correct_input');
                     inputElement.classList.add('false_input');
                 }
-    };
+        };
