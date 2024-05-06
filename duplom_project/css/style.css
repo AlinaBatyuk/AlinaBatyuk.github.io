@@ -377,13 +377,117 @@ img.photo {
 /* ----------------------------------------------- */
 
 /* ----------------footer style------------------- */
-
+.container {
+    width: 100%;
+    padding-right: 20px;
+    padding-left: 20px;
+    margin-right: auto;
+    margin-left: auto;
+}
+.footer-top__social-bot {
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+    margin-top: 20px;
+}
+footer #accordionFooter {
+    display: flex;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+    margin-right: 120px;
+}
+footer #accordionFooter button {
+    font-size: 14px;
+    line-height: 20px;
+    color: #2a2f3c;
+    background-color: transparent;
+    border: none;
+    padding: 0 0 25px;
+    font-weight: 600;
+}
+footer #accordionFooter ul li a {
+    color: #2a2f3c;
+    text-decoration: none;
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 400;
+}
+footer .footer-logo, footer .footer-subscribe {
+    margin-bottom: 35px;
+}
+.footer-subscribe--input {
+    display: flex;
+}
+.footer-subscribe--title {
+    font-size: 12px;
+    color: #2a2f3c;
+    margin-bottom: 10px;
+}
+.footer-social {
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+}
+.footer-social--list a {
+    width: 20px;
+}
+.footer-social--title {
+    margin-right: 10px;
+    font-size: 12px;
+    color: #2a2f3c;
+}
+.footer-top__social-bot {
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+    margin-top: 20px;
+}
+/* .btn, button {
+    user-select: none;
+}
+button, input {
+    overflow: visible;
+}
+button, select {
+    text-transform: none;
+} */
+.social-bot__btn {
+    margin: 0 10px;
+}
+.footer {
+    font-size: 12px;
+}
 .footer-bottom {
+    display: flex;
     background-color: #fff;
     height: 60px;
     align-items: center;
-}
 
+}
+.footer, .footer-bottom, .copyright, .evergreen {
+    display: flex;
+    /* -webkit-box-align: center;
+    -webkit-align-items: center; */
+    align-items: center;
+}
+.footer-bottom, .copyright, .fw-400 {
+    margin-left: 10px;
+    font-weight: 400;
+}
+.row {
+    /* display: flex; */
+    margin-right: -20px;
+    margin-left: -20px;
+}
+.accordion {
+    width: 20%;
+}
 /* ----------------------------------------------- */
 
 #statics_mob_footer_help_btn:hover {
