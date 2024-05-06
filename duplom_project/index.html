@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Podaruy shance</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+<body>
+    <header class="header">
+        <div class="wrapper-blue-container-nav">
+            <div class="container-nav">
+                <div class="div-block-20">
+                    <div>
+                        <div class="text-block-6">Допомога, що міняє світ</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="header__top-wrap">
+            <div class="header__login">
+                <a class="link" href="/member/login/?next=/">Увійти</a>
+            </div>
+            <div class="header__logo">
+                <a class="logo link" href="/index.html">
+                    <img src="img/logo.svg" alt="">
+                </a>
+            </div>
+            <div class="header__box-right header__box-right--new">
+                
+                <!-- <div class="header__search js-search">
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M18.8632 17.714L18.8396 17.7375L15.0215 13.9003C16.2978 12.3407 16.9372 10.3543 16.8083 8.34043C16.677 6.2884 15.7581 4.3664 14.2435 2.97568C12.7289 1.58495 10.7357 0.833007 8.67991 0.876812C6.62414 0.920617 4.66474 1.75679 3.21077 3.21077C1.75679 4.66474 0.920617 6.62414 0.876812 8.67991C0.833007 10.7357 1.58496 12.7289 2.97568 14.2435C4.3664 15.7581 6.2884 16.677 8.34043 16.8083C10.3543 16.9372 12.3407 16.2978 13.9003 15.0215L17.8264 18.928L17.8261 18.9283L17.8332 18.9344C17.9849 19.0642 18.18 19.1321 18.3795 19.1244C18.579 19.1167 18.7683 19.034 18.9095 18.8928C19.0507 18.7516 19.1334 18.5623 19.1411 18.3628C19.1488 18.1633 19.0809 17.9682 18.9511 17.8165L18.8632 17.714ZM2.46683 8.8693C2.46685 7.60633 2.84138 6.37173 3.54305 5.3216C4.24474 4.27145 5.24208 3.45295 6.40895 2.96962C7.57582 2.48629 8.85981 2.35983 10.0985 2.60623C11.3373 2.85263 12.4751 3.46083 13.3682 4.35391C14.2613 5.24699 14.8695 6.38485 15.1159 7.62359C15.3623 8.86233 15.2359 10.1463 14.7525 11.3132C14.2692 12.4801 13.4507 13.4774 12.4005 14.1791C11.3504 14.8807 10.1159 15.2553 8.85291 15.2553C7.16002 15.2527 5.5372 14.5791 4.34014 13.382C3.1431 12.185 2.46945 10.5622 2.46683 8.8693Z" fill="#00B964" stroke="#00B964" stroke-width="0.25"></path>
+                    </svg>
+                </div> -->
+                <!-- <div class="header__login">
+                    <a href="/member/login/?next=/">Увійти</a>
+                </div> -->
+                <div class="header__inner">
+                    <!-- <a id="statics_mob_footer_help_btn" class="btn--new" href="/help">Допоможи dobro.ua</a> -->
+                    <div class="select-list js-select-list">
+                        <!-- <div class="select-list__current">uk</div> -->
+                        <div id='menuIcons' class="select-list__list">
+                            <span id='iconOpen'  class="material-symbols-outlined">menu</span>
+                            <span id='iconClose' class="material-symbols-outlined d-none">close</span>
+                        </div>
+                        <ul id='mainMenu' class="hide main-menu-mobile select-list__list mobile-content-wrap">
+                            <li><h4>Зробити добро</h4></li>
+                            <li id="subList" class="projects"><!--<div class="projects ">-->Проекти<!--</div>--><span id="subListIcon" class="material-symbols-outlined">expand_more</span>
+                                <ul class="projects mobile-content-wrap">    
+                                    <li class="category">Здоров'я</li>
+                                    <li class="category">Соціальна допомога</li>
+                                    <li class="category">Екологія</li>
+                                    <li class="category">Культура та спорт</li>
+                                    <li class="category">Підтримка громад та України</li>
+                                </ul>
+                            </li>
+                            <li><h4>Про платформу</h4></li>
+                            <li class="projects"><a class="link" href="">Про нас</a></li>
+                            <li class="projects"><a class="link" href="">Як допомогти?</a></li>
+                            <li><a class="button bot"><i class="fa-brands fa-telegram"></i>Telegram bot</a></li>
+                            <li><a class="button viber link" href=""><i class="fa-brands fa-viber"></i>Viber</a></li>
+                            <!-- <li>
+                                <form name="lang_uk" action="/i18n/setlang/" method="POST">
+                                    <input type="hidden" name="csrfmiddlewaretoken" value="5nartv7xAeQ0FqusNCM3jGeRwz65mbTNkQaSx2na80CbK4EV0pCAPCspVR2qfRqP">
+                                    <input name="next" type="hidden" value="">
+                                    <input type="hidden" name="language" value="uk">
+                                    <a class="change-lang-btn" href="" onclick="if (!window.__cfRLUnblockHandlers) return false; document.lang_uk.submit(); return false;">Uk<span class="material-symbols-outlined">expand_more</span></a>
+                                </form>
+                            </li>
+                            <li>
+                                <form name="lang_en" action="/i18n/setlang/" method="POST">
+                                    <input type="hidden" name="csrfmiddlewaretoken" value="5nartv7xAeQ0FqusNCM3jGeRwz65mbTNkQaSx2na80CbK4EV0pCAPCspVR2qfRqP">
+                                    <input name="next" type="hidden" value="">
+                                    <input type="hidden" name="language" value="en">
+                                    <a class="change-lang-btn" href="" onclick="if (!window.__cfRLUnblockHandlers) return false; document.lang_en.submit(); return false;">En</a>
+                                </form>
+                            </li> -->
+                        </ul>
+                    </div>
+                </div>
+                <!-- <a class="btn_btn-success" id="statics_header_help_btn" href="/help">Допоможи dobro.ua</a> -->
+            </div>
+        </div>
+    </header>
+    <div class="wrapper mobile-content-wrap">
+        <div class="wrapp">
+            <h2 class="heading">Допомога об'єднує</h2>
+            <div class="description">Щоб допомагати не потрібно багато зусиль, але скільки щастя і добра ти принесеш у цей світ!</div>
+            <button class="help">Допомогти</button>
+        </div>
+        <img class="margin-bottom" src="img/armshelp.jpg" alt="">
+    </div>
+    <hr>
+    <div class="mobile-content-wrap">
+        <div class="title ellipse">Категорії</div>
+        <div class="categories">
+            <div class="category"><span class="material material-symbols-outlined">ecg</span>Здоров'я</div>
+            <div class="category"><span class="material material-symbols-outlined">volunteer_activism</span>Соціальна допомога</div>
+            <div class="category"><span class="material material-symbols-outlined">school</span>Освіта та наука</div>
+            <div class="category"><span class="material material-symbols-outlined">eco</span>Екологія</div>
+            <div class="category"><span class="material material-symbols-outlined">palette</span>Культура та спорт</div>
+            <div class="category"><span class="material material-symbols-outlined">home_pin</span>Підтримка громад та України</div>
+        </div>
+    </div>
+    <hr>
+    <div class="video mobile-content-wrap margin-bottom">
+        <div class="title scy">Завдяки вам військові отримали необхідну допомогу</div>
+        <div class="infovideo">З першого дня війни ми об’єдналися для допомоги постраждалим. Зараз ми об’єднуємо людей, бізнеси, державні установи та просто небайдужих для створення проєктів, які приведуть до нашої спільної перемоги та відбудови майбутнього України.</div>
+        <!-- <div class="video" src="video\volonters.mp4"></div> -->
+        <button class="help-1">Допомогти ЗСУ</button>
+        <video class="video" src="video/volonters.mp4"  controls autobuffer></video>
+    </div>
+    <hr>
+    <div class="statustic mobile-content-wrap">
+        <div class="title cloud">Досягнення завдяки вам</div> <!--Статистика допомоги іншим-->
+        <div class="statustic-line mobile-content-wrap">
+            <div class="oblik oblik-purple">14000+ <div class="text-oblik">Людям надали допомогу</div></div>
+            <div class="oblik oblik-green">16000+ <div class="text-oblik">Продуктових наборів</div></div>
+        </div>
+        <div class="statustic-line mobile-content-wrap">
+            <div class="oblik oblik-yellow">1 057 700+ <div class="text-oblik">Гарячих обідів</div></div>
+            <div class="oblik oblik-pink">5030+ <div class="text-oblik">Дітям подарували свято</div></div>
+        </div>
+        <div class="img-box margin-bottom"><img src="img/boxproduct.jpg" alt=""></div>
+    </div>
+    <hr>
+    <div class="all-projects margin-bottom mobile-content-wrap">
+        <div class="title">Проекти</div>
+        <div class="help-projects margin-bottom">
+            <div class="project">
+                <div><img class="photo" src="img/hospital.jpg" alt=""></div>
+                <div class="">Здоров'я</div>
+                <div class="category infocategory">Допомога дитячим лікарням під час війни</div>
+                <div>Зібрано</div>
+                <div class="cash">238 458 грн</div>
+            </div>
+            <div class="project">
+                <div class="photo"><img class="photo" src="img/sitka3.jpg" alt=""></div>
+                <div class="">Підтримка громад</div>
+                <div class="category infocategory">Збір на матеріали для маскувальних сіток</div>
+                <div>Зібрано</div>
+                <div class="cash">10 056 грн</div>
+            </div>
+            <div class="project">
+                <div><img class="photo" src="img/family.jpg" alt=""></div>
+                <div class="">Соціальна допомога</div>
+                <div class="category infocategory">Продуктові набори для постраждалих від війни</div>
+                <div>Зібрано</div>
+                <div class="cash">238 458 грн</div>
+            </div>
+            <div class="project">
+                <div><img class="photo" src="img/backpack.jpg" alt=""></div>
+                <div class="">Освіта та наука</div>
+                <div class="category infocategory">Багаж дитинства</div>
+                <div>Зібрано</div>
+                <div class="cash">238 458 грн</div>
+            </div>
+        </div>
+    </div>
+    <hr>
+    <footer>
+        <div class="footer-bottom">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-8 col-lg-7 col-md-7 col-6 copyright">
+                        <div>© 2012-<span class="year"></span> dobro.ua</div>
+                        <div class="fw-400">МБФ "Українська Біржа Благодійності"</div>
+                    </div>
+                    <div class="col-xl-4 col-lg-5 col-md-5 col-6 evergreen">
+                        <span>Developed &amp; supported by</span>
+                        <a href="https://evergreen.team/service/copyright.html" target="_blank" rel="nofollow"><img src="https://dobro-media-prod.s3-eu-west-1.amazonaws.com/staticfiles/front/images/logo-evergreen.svg" alt=""></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script src="script/script.js"></script>
+</body>
+</html>
+
+
+<!-- <a href="tel:0000000000" class="phone-nav">+380 99 999 99 99</a> -->
